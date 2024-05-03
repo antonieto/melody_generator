@@ -34,15 +34,6 @@ def generate(start: int, iterations: int) -> List[int]:
 
 
 def play_tone(frequency, duration=1.0, sample_rate=44100, amplitude=0.5):
-    """
-    Play a tone at a specified frequency, duration, sample rate, and amplitude.
-
-    Args:
-    frequency (float): Frequency of the tone in Hertz.
-    duration (float): Duration of the tone in seconds.
-    sample_rate (int): Sampling rate in samples per second.
-    amplitude (float): Amplitude of the tone, scale 0-1.
-    """
     # Generate time values
     t = np.linspace(0, duration, int(sample_rate * duration), False)
     
